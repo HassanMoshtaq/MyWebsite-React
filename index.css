@@ -1,0 +1,66 @@
+/* Introduction Section */
+.Introduction {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+
+.Container {
+  display: flex; /* Arrange items horizontally */
+  align-items: flex-start; /* Align items at the top */
+  gap: 20px; /* Space between the image and paragraph */
+}
+
+
+/* Profile Image Styles */
+.Profile-image {
+  width: 250px; /* Set the image width */
+  height: 350px; /* Set the image height */
+  object-fit: cover; /* Ensure the image fits within its container */
+}
+
+/* Paragraph Styles */
+.Container p {
+  font-size: 16px; /* Adjust the text size */
+  color: #333; /* Set the text color */
+  margin: 0; /* Remove default margin */
+}
+.Container p {
+  flex: 1; /* Allow the paragraph to take the remaining space */
+  margin: 0; /* Remove any default margins */
+  text-align: justify; /* Optional: Justify text for better alignment */
+  line-height: 1.6; /* Improve readability with proper line spacing */
+}
+h2{
+  color: red;
+}
+.Click-btn {
+  display: flex; /* Center the button within its container */
+  justify-content: center; /* Horizontally center */
+  align-items: center; /* Vertically center */
+  margin-top: 20px; /* Add some spacing from other elements */
+}
+
+.Click-btn button {
+  background: linear-gradient(45deg, #6a11cb, #2575fc); /* Gradient background */
+  color: #fff; /* Text color */
+  font-size: 16px; /* Font size */
+  font-weight: bold; /* Bold text */
+  padding: 12px 24px; /* Padding for size */
+  border: none; /* Remove default border */
+  border-radius: 25px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08); /* Subtle shadow */
+  cursor: pointer; /* Pointer cursor on hover */
+  transition: all 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.Click-btn button:hover {
+  background: linear-gradient(45deg, #2575fc, #6a11cb); /* Inverse gradient on hover */
+  transform: translateY(-2px); /* Lift the button slightly */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15), 0 3px 5px rgba(0, 0, 0, 0.1); /* Increase shadow depth */
+}
+
+.Click-btn button:active {
+  transform: translateY(0); /* Reset lift on click */
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.12), 0 1px 3px rgba(0, 0, 0, 0.08); /* Slightly reduce shadow */
+}
